@@ -33,6 +33,7 @@ description->varchar
 user_id->int
 
 get = https://notes-app555.000webhostapp.com/api/getNotesByUerId/{user_id}
+
 post = https://notes-app555.000webhostapp.com/api/deleteNote/{user_id}/{note_id}
 body
 Nothing
