@@ -1,24 +1,43 @@
-# Lumen PHP Framework
+# Note-app-back-end
 
 [![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
 [![Total Downloads](https://poser.pugx.org/laravel/lumen-framework/d/total.svg)](https://packagist.org/packages/laravel/lumen-framework)
 [![Latest Stable Version](https://poser.pugx.org/laravel/lumen-framework/v/stable.svg)](https://packagist.org/packages/laravel/lumen-framework)
 [![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework)
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+This is a simple practice project to learn lumen API development. I have integrated the endpoint to my [noteApp](https://github.com/hatanvir/Note-app-MVVM) android project. All endpoints are free. Anyone can practice API implementation on mobile, web, desktop.
 
-## Official Documentation
+## Endpoints
+<pre>post = https://notes-app555.000webhostapp.com/api/register
+body
+name->varchar
+email->varchar
+password->varchar
+password_confirmation->varchar
 
-Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).
+post = https://notes-app555.000webhostapp.com/api/login
+body
+email->varchar
+password->varchar
 
-## Contributing
+post = https://notes-app555.000webhostapp.com/api/addNote
+body
+subject->varchar
+description->varchar
+user_id->int
 
-Thank you for considering contributing to Lumen! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+post = https://notes-app555.000webhostapp.com/api/updateNote/{id} [id = noteId]
+body
+subject->varchar
+description->varchar
+user_id->int
 
-## Security Vulnerabilities
+get = https://notes-app555.000webhostapp.com/api/getNotesByUerId/{user_id}
+post = https://notes-app555.000webhostapp.com/api/deleteNote/{user_id}/{note_id}
+body
+Nothing
+</pre>
 
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Contact
+<b>Email:</b> tanvirhasan553@gmail.com<br>
+<b>LinkedIn:</b> https://www.linkedin.com/in/tanvir-hasan-a97940117/
